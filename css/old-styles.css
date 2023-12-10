@@ -291,19 +291,19 @@ body {
 .team {
   background: #f4f4fd;
 }
-.team-list-icon {
+.team-list-icon {  
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
   margin-top: 8px;
 }
-.list-icon {
+.list-icon {    
   width: 40px;
   height: 40px;
   margin: 0;
 }
-.link-icon {
+.link-icon {      
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,7 +317,7 @@ body {
 .link-icon:focus {
   background-color: #404bbf;
 }
-.team-link-icon {
+.team-link-icon {    
   fill: #f4f4fd;
 }
 
