@@ -76,6 +76,7 @@ body {
 .page-header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .logo {
   color: #4d5ae5;
@@ -216,7 +217,7 @@ body {
     padding-top: 168px;
   }
   ^.mobile-contact-list-item {
-    width: calc((100%-24) / 2);
+    width: calc((100%-24px) / 2); 
   }
   .mobile-contacts-link {
     display: block;
@@ -286,9 +287,9 @@ body {
   padding-top: 72px;
   padding-bottom: 72px;
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .first {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -607,6 +608,7 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   padding-left: 16px;
   color: #ffffff;
+  
 }
 
 .form-button {
@@ -776,8 +778,6 @@ body {
 
 .review-form-checkbox-wrapper {
   margin-bottom: 24px;
-  display: flex;
-  align-items: center;
 }
 
 .review-form-own-checkbox {
@@ -826,6 +826,8 @@ body {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
 }
 
 .accent-color {
@@ -859,8 +861,6 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 0 15px;
   }
   /* ----------TABLET HEADER----------- */
@@ -962,7 +962,7 @@ body {
   }
 
   .contact-list-item {
-    width: calc((100%-24) / 2);
+    width: calc((100%-24px) / 2);
   }
   .contacts-link:hover,
   .contacts-link:focus {
@@ -1021,9 +1021,9 @@ body {
   /* -----------------TABLET COMPANY-------------  */
   /* -----------------TABLET TEAM-------------------- */
 
-.team-cont{
-  margin:0;
-}
+  .team-cont {
+    margin: 0;
+  }
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
