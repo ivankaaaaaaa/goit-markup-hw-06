@@ -217,7 +217,7 @@ body {
     padding-top: 168px;
   }
   ^.mobile-contact-list-item {
-    width: calc((100%-24px) / 2); 
+    width: calc((100%-24px) / 2);
   }
   .mobile-contacts-link {
     display: block;
@@ -591,8 +591,10 @@ body {
 }
 
 .form {
-  display: block;
+  display: flex;
   gap: 24px;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -606,17 +608,19 @@ body {
   letter-spacing: 0.04em;
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding-left: 16px;
   color: #ffffff;
-  
+  opacity: 0.3;
 }
 
 .form-button {
-  min-width: 165px;
+  width: 165px;
   height: 40px;
-  display: inline-block;
+  display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -625,12 +629,12 @@ body {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
-  margin-top: 16px;
 }
 
 .form-icon {
   margin-left: 16px;
   fill: #fff;
+
 }
 /* -----------------MOBILE FOOTER------------------- */
 /* -----------------MOBILE MODAL-------------------- */
@@ -1010,9 +1014,10 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
+    width: 738px;
   }
   .content-item {
-    width: calc((100% - 24px) / 2);
+    flex-basis: calc((100% - 24px) / 2);
     max-width: 356px;
   }
   .header-company {
@@ -1020,19 +1025,62 @@ body {
   }
   /* -----------------TABLET COMPANY-------------  */
   /* -----------------TABLET TEAM-------------------- */
-
-  .team-cont {
-    margin: 0;
+  .sec-title {
+    text-align: center;
   }
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 64px 24px;
+    column-gap: 24px;
+    row-gap: 64px;
+    width: 554px;
   }
   .team-list-item {
-    width: calc((100%-24px) / 2);
+    width: calc((100% - 24px) / 2);
+  }
+  .team-cont {
+    width: 584px;
   }
   /* -----------------TABLET TEAM--------------------- */
+  /* --------------TABLET PORTFOLIO------------------ */
+  .portfolio-li {
+    width: 356px;
+    height: 420px;
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .portfolio-list {
+    row-gap: 72px;
+  }
+ /* --------------TABLET PORTFOLIO------------------ */
+ /* --------------TABLET FOOTER-------------------- */
+ .footer-all {
+  display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ gap: 72px 24px;
+ max-width: 584px;
+ margin: 0;
+}
+.footer-title{
+  margin:0 0 16px 0;
+  text-align: left;
+}
+ .page-footer{
+  padding-left: 108px;
+ }
+ .footer-list-icon {
+  margin-top: 0;
+}
+.logo-footer{
+  text-align: left;
+}
+.form-input{
+  width: 264px;
+}
+.form{
+  flex-direction: row;
+}
+/* --------------TABLET FOOTER-------------------- */
 }
 
 @media screen and (min-width: 1158px) {
