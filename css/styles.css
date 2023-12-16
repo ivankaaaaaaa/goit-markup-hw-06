@@ -868,7 +868,6 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 15px;
   }
   /* ----------TABLET HEADER----------- */
   .mobile-menu-open-btn {
@@ -1102,6 +1101,8 @@ body {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   /* ----------DESKTOP HEADER----------- */
