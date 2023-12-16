@@ -881,6 +881,9 @@ body {
   .page-header {
     padding: 0;
   }
+  .logo{
+    margin-right: 120px;
+  }
   .menu {
     display: flex;
     gap: 40px;
@@ -941,7 +944,6 @@ body {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .page-navigation {
-    width: 495px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1119,7 +1121,6 @@ body {
       margin-right: 76px;
     }
     .page-navigation {
-      width: 100%;
      margin-right: auto;
      justify-content: 0;
     }
