@@ -1055,7 +1055,6 @@ body {
   /* --------------TABLET PORTFOLIO------------------ */
   .portfolio-li {
     width: 356px;
-    height: 420px;
     flex-basis: calc((100% - 24px) / 2);
   }
   .portfolio-list {
@@ -1162,7 +1161,7 @@ body {
 /* ------------DESKTOP FIRST------------- */
 /* -----------DESKTOP COMPANY------------ */
 .section{
-  padding: 120px 156px;
+  padding: 120px 141px;
 }
 .icon-box{
   max-width: 264px;
@@ -1220,13 +1219,34 @@ margin-bottom: 8px;
 /* -----------DESKTOP TEAM-------------- */
 /* -----------DESKTOP PORTFOLIO---------- */
 .portfolio-li {
-  width: 360px;
-  height: 420px;
-  flex-basis: calc((100% - 48px) / 3);
+ flex-basis: calc((100% - 48px) / 3);
 }
 .portfolio-list {
   row-gap: 48px;
+  width: 1128px;
+  text-align: center;
 }
 /* -----------DESKTOP PORTFOLIO---------- */
-  
+/* -----------DESKTOP FOOTER-------------- */ 
+.page-footer{
+  padding: 100px 0;
 }
+.footer-all {
+  width: 1158px;
+  display: flex;
+  align-items: center;
+  flex-direction: none;
+  flex-wrap: nowrap;
+  gap: unset;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-media {
+  margin-right: 80px;
+}
+.first-footer{
+  margin-right: 120px;
+}
+/* -----------DESKTOP FOOTER-------------- */ 
+  }
