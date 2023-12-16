@@ -638,7 +638,6 @@ body {
 .form-icon {
   margin-left: 16px;
   fill: #fff;
-
 }
 /* -----------------MOBILE FOOTER------------------- */
 /* -----------------MOBILE MODAL-------------------- */
@@ -881,7 +880,7 @@ body {
   .page-header {
     padding: 0;
   }
-  .logo{
+  .logo {
     margin-right: 120px;
   }
   .menu {
@@ -950,6 +949,14 @@ body {
   }
   .contacts {
     font-style: normal;
+  }
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contact-list-item {
+    width: calc((100%-24px) / 2);
   }
   .contacts-list {
     display: flex;
@@ -1054,88 +1061,172 @@ body {
   .portfolio-list {
     row-gap: 72px;
   }
- /* --------------TABLET PORTFOLIO------------------ */
- /* --------------TABLET FOOTER-------------------- */
- .footer-all {
-  display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- gap: 72px 24px;
- max-width: 584px;
- margin: 0;
-}
-.footer-title{
-  margin:0 0 16px 0;
-  text-align: left;
-}
- .page-footer{
-  padding-left: 108px;
- }
- .footer-list-icon {
-  margin-top: 0;
-}
-.logo-footer{
-  text-align: left;
-}
-.form-input{
-  width: 264px;
-
-}
-.form{
-  flex-direction: row;
-}
-/* --------------TABLET FOOTER-------------------- */
-/* ---------------TABLET MODAL------------------ */
-.modal{
-  width: 408px;
-  min-height: 584px;
-  padding: 72px 24px 24px 24px;
-}
-/* ---------------TABLET MODAL------------------ */
+  /* --------------TABLET PORTFOLIO------------------ */
+  /* --------------TABLET FOOTER-------------------- */
+  .footer-all {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    max-width: 584px;
+    margin: 0;
+  }
+  .footer-title {
+    margin: 0 0 16px 0;
+    text-align: left;
+  }
+  .page-footer {
+    padding-left: 108px;
+  }
+  .footer-list-icon {
+    margin-top: 0;
+  }
+  .logo-footer {
+    text-align: left;
+  }
+  .form-input {
+    width: 264px;
+  }
+  .form {
+    flex-direction: row;
+  }
+  /* --------------TABLET FOOTER-------------------- */
+  /* ---------------TABLET MODAL------------------ */
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+  /* ---------------TABLET MODAL------------------ */
 }
 /* -------------------DESKTOP-------------------- */
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
   }
+  
+  /* ----------DESKTOP HEADER----------- */
+  .logo {
+    margin-right: 76px;
+  }
+  .page-navigation {
+    margin-right: auto;
+    justify-content: 0;
+  }
+  .contacts {
+    margin: 0;
+  }
+  .contacts-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .contacts-link {
+    color: #434455;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .contact-list-item {
+    width: calc((100%-40) / 2);
+  }
+  /* ---------DESKTOP HEADER------------ */
+/* ------------DESKTOP FIRST------------- */
+.first {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office_desk.jpg);
+  padding: 188px 0;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .first {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office_desk.jpg);
+      url(../images/people-office_desk2x.jpg);
   }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .first {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/people-office_desk2x.jpg);
-    }
-    /* ----------DESKTOP HEADER----------- */
-    .logo{
-      margin-right: 76px;
-    }
-    .page-navigation {
-     margin-right: auto;
-     justify-content: 0;
-    }
-    .contacts {
-      margin:0;
-    }
-    .contacts-list {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      gap: 40px;
-    }
-    .contact-list-item {
-      flex-basis: calc((100%-40) / 2);
-    }
-    /* ---------DESKTOP HEADER------------ */
-  }
+}
+.butt {
+  margin-top: 48px;
+}
+/* ------------DESKTOP FIRST------------- */
+/* -----------DESKTOP COMPANY------------ */
+.section{
+  padding: 120px 156px;
+}
+.icon-box{
+  max-width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background-color: #f4f4fd;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.header-company{
+  color:  #2E2F42;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.2; 
+letter-spacing: 0.02em;
+margin-bottom: 8px;
+}
+.content-info {
+  color: #434455;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.content-item {
+ width: 264px;
+  flex-basis: auto;
+}
+.company {
+  display: flex;
+  gap: 24px;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+/* -----------DESKTOP COMPANY------------ */
+/* -----------DESKTOP TEAM-------------- */
+.team-list {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 24px;
+  width: 100%;
+}
+.team-list-item {
+  width: 100%;
+}
+.team-cont {
+  width: 100%;
+}
+/* -----------DESKTOP TEAM-------------- */
+/* -----------DESKTOP PORTFOLIO---------- */
+.portfolio-li {
+  width: 360px;
+  height: 420px;
+  flex-basis: calc((100% - 48px) / 3);
+}
+.portfolio-list {
+  row-gap: 48px;
+}
+/* -----------DESKTOP PORTFOLIO---------- */
+  
 }
