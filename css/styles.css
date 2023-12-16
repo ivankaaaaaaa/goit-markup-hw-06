@@ -1103,14 +1103,13 @@ body {
   .container {
     max-width: 1158px;
   }
-  
+
   /* ----------DESKTOP HEADER----------- */
   .logo {
     margin-right: 76px;
   }
   .page-navigation {
     margin-right: auto;
-    justify-content: 0;
   }
   .contacts {
     margin: 0;
@@ -1132,121 +1131,120 @@ body {
     letter-spacing: 0.02em;
   }
   .contact-list-item {
-    width: calc((100%-40) / 2);
+    width: calc((100%-40px) / 2);
   }
   /* ---------DESKTOP HEADER------------ */
-/* ------------DESKTOP FIRST------------- */
-.first {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office_desk.jpg);
-  padding: 188px 0;
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  /* ------------DESKTOP FIRST------------- */
   .first {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office_desk2x.jpg);
+      url(../images/people-office_desk.jpg);
+    padding: 188px 0;
   }
-}
-.butt {
-  margin-top: 48px;
-}
-/* ------------DESKTOP FIRST------------- */
-/* -----------DESKTOP COMPANY------------ */
-.section{
-  padding: 120px 141px;
-}
-.icon-box{
-  max-width: 264px;
-  height: 112px;
-  border-radius: 4px;
-  border: 1px solid #8e8f99;
-  background-color: #f4f4fd;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 8px;
-}
-.header-company{
-  color:  #2E2F42;
-font-family: Roboto;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 1.2; 
-letter-spacing: 0.02em;
-margin-bottom: 8px;
-}
-.content-info {
-  color: #434455;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-.content-item {
- width: 264px;
-  flex-basis: auto;
-}
-.company {
-  display: flex;
-  gap: 24px;
-  flex-wrap: nowrap;
-  width: 100%;
-}
-/* -----------DESKTOP COMPANY------------ */
-/* -----------DESKTOP TEAM-------------- */
-.team-list {
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 24px;
-  width: 100%;
-}
-.team-list-item {
-  width: 100%;
-}
-.team-cont {
-  width: 100%;
-}
-/* -----------DESKTOP TEAM-------------- */
-/* -----------DESKTOP PORTFOLIO---------- */
-.portfolio-li {
- flex-basis: calc((100% - 48px) / 3);
-}
-.portfolio-list {
-  row-gap: 48px;
-  width: 1128px;
-  text-align: center;
-}
-/* -----------DESKTOP PORTFOLIO---------- */
-/* -----------DESKTOP FOOTER-------------- */ 
-.page-footer{
-  padding: 100px 0;
-}
-.footer-all {
-  width: 1158px;
-  display: flex;
-  align-items: center;
-  flex-direction: none;
-  flex-wrap: nowrap;
-  gap: unset;
-  margin-left: auto;
-  margin-right: auto;
-}
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .first {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office_desk2x.jpg);
+    }
+  }
+  .butt {
+    margin-top: 48px;
+  }
+  /* ------------DESKTOP FIRST------------- */
+  /* -----------DESKTOP COMPANY------------ */
+  .section {
+    padding: 120px 141px;
+  }
+  .icon-box {
+    max-width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    background-color: #f4f4fd;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+  .header-company {
+    color: #2e2f42;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+  .content-info {
+    color: #434455;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .content-item {
+    width: 264px;
+    flex-basis: auto;
+  }
+  .company {
+    display: flex;
+    gap: 24px;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  /* -----------DESKTOP COMPANY------------ */
+  /* -----------DESKTOP TEAM-------------- */
+  .team-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+    width: 100%;
+  }
+  .team-list-item {
+    width: 100%;
+  }
+  .team-cont {
+    width: 100%;
+  }
+  /* -----------DESKTOP TEAM-------------- */
+  /* -----------DESKTOP PORTFOLIO---------- */
+  .portfolio-li {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+  .portfolio-list {
+    row-gap: 48px;
+    width: 1128px;
+    text-align: center;
+  }
+  /* -----------DESKTOP PORTFOLIO---------- */
+  /* -----------DESKTOP FOOTER-------------- */
+  .page-footer {
+    padding: 100px 0;
+  }
+  .footer-all {
+    width: 1158px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: unset;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.social-media {
-  margin-right: 80px;
-}
-.first-footer{
-  margin-right: 120px;
-}
-/* -----------DESKTOP FOOTER-------------- */ 
+  .social-media {
+    margin-right: 80px;
   }
+  .first-footer {
+    margin-right: 120px;
+  }
+  /* -----------DESKTOP FOOTER-------------- */
+}
